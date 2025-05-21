@@ -1,0 +1,131 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  
+  line-height: 1.5;
+
+  color: #ebe7ef;
+  background: radial-gradient(#38037d, #042f75);
+  height: 100vh; 
+
+}
+
+header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+header h1 {
+  margin: 0;
+
+  font-size: 5rem; 
+  color : rgb(23, 177, 237); 
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ff53ee; 
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+#core-concepts {
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: green;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+main section h2 {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  color: white;
+}
+
+#core-concepts ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#core-concepts li {
+  width: 10rem;
+  text-align: center;
+}
+
+#core-concepts li img {
+  height: 4rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+#core-concepts li h3 {
+  margin: 0.5rem 0;
+}
+
+#core-concepts li p {
+  font-size: 0.5rem;
+}
+
+#examples {
+  margin: 3rem auto;
+}
+
+#examples h2 {
+  text-align: left;
+}
+
+#examples menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+#examples menu button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#examples menu button:hover {
+  background-color: gray;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: antiquewhite;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  color: black;
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+#tab-content code {
+  font-size: 1rem;
+}
+
+.hidden-div {
+  padding: 30px;
+}

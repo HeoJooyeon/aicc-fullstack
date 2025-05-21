@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+       html, body, section {
+            display: flex;   
+            margin-bottom: 10px;
+            align-items: center;      
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        ul{
+            list-style:none;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            align-items: center; 
+            justify-content: center;
+        }
+        div{
+            background-color: #baffc9;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        form{
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }   
+        .underline{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <form id="todolistForm">
+                <h1>To-Do List</h1>
+                <input type="text" placeholder="Add a new task..." id="todolistInput">
+                <button type="submit">Add Task</button>               
+            </form>
+            <ul id="todolistDisplay"></ul>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

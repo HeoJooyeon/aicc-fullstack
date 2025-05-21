@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Books Search</title>
+  </head>
+  <body>
+    <h2>Google Books 검색 및 분석</h2>
+    <form method="POST">
+      <input
+        type="text"
+        name="keyword"
+        placeholder="예: python, AI, law"
+        required
+      />
+      <input type="submit" value="검색" />
+    </form>
+
+    {% if chart_exists %}
+    <h3>'{{ keyword }}' 관련 책 중 가장 페이지 수 많은 Top 10</h3>
+    <img src="{{ url_for('static', filename='chart.png')}}" width="600" />
+    {% elif message %}
+    <p>{{ message }}</p>
+    {% endif %}
+  </body>
+</html>

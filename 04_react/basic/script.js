@@ -1,0 +1,1 @@
+console.log("test 파일의 script입니다");

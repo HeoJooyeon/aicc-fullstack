@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: seagreen;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: blueviolet;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* gap: 5px; */
+}
+
+input[type="text"]{
+    width: 55%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+}
+
+button{
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: chartreuse;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none; /* ul 아래 생기는 li 앞에 점이 없어진다 */
+}
+
+li{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button{
+    background-color: blue;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover{
+    background-color: darkkhaki;
+}
+
+.completed-style{
+    text-decoration: line-through;
+    opacity: 0.7;
+}

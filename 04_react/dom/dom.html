@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color: black;
+        }
+        .drinkColor{
+            background-color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>DOM Examples</h1>
+        <h2>DOM Elements 접근</h2>
+        <p id="myParagraph">This is a paragraph. Click the button to change me!</p>
+        <button id="changeTextButton">Change Text</button>
+    </section>
+    <section>
+        <h2>Traversing the DOM</h2>
+        <ul id="citiesList">
+            <li>NewYork</li>
+            <li>Tokyo</li>
+            <li>Paris</li>
+            <li>London</li>
+        </ul>
+        <button id="highlightFirstCity">Highlight First City</button>
+    </section>
+    <section>
+        <h1>DOM Element 조작 Manipulation</h1>
+            <div>Order : <span id="drink">Latte</span></div>
+        <button id="changeOrder">Change Order to Espresso</button>
+    </section>
+    <section>
+        <h1>Inserting Elements 만들기</h1>
+        <button id="newShopping">Add a New Item to the Shopping List</button>
+        <ul id="shopList">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+    <section>
+        <h1>Removing DOM Elements</h1>    
+        <ul id="taskList">
+            <li>Task1</li>
+            <li>Task2</li>
+            <li>Task3</li>
+        </ul>
+        <button id="removeTask">Remove Last Task</button>
+    </section>
+    <section>
+        <h1>Event Handing in the DOM</h1>
+        <button id="dblclick">Double Click Me!</button>
+    </section>
+    <section>
+        <h1>Event Delegation</h1>
+        <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black Tea</li>
+            <li class="teaItem">Oolong Tea</li>
+        </ul>
+        <h2>Click on any tea to select it!</h2>
+    </section>
+    <section>
+        <h1>Form Handing</h1>
+            <label for="feedback">
+                Your Feedback:
+                <input id="fbinput" type="text" placeholder="Enter Feedback"></itput>
+            </label>
+            <button id ="fbsubmit">Submit Feedback</button>
+            <ul id="fbform"></ul>
+    </section>
+    <section>
+        <h2>Form Handing</h2>
+        <form id="feedbackForm">
+            <label for="feedbackInput">Your Feedback:</label>
+            <input type="text" placeholder="Enter feedback" id="feedbackInput">
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="feedbackDisplay"></p>
+    </section>
+    <section>
+        <h2>DOM Content Loaded</h2>
+        <p id="domStatus">Waiting for DOM to load...</p>
+    </section>
+    <section>
+        <h1>CSS Class Manipulation</h1>
+        <p id="togtxt">This text will change color!</p>
+        <button id="togbtn">Toggle Highight</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 
+    DOM(Document Object Model)이란?
+    DOM(Document Object Model)은 웹 페이지의 HTML 문서를 구조화하고, 프로그래밍적으로 제어할 수 있도록 하는 인터페이스. 웹 페이지의 요소를 JavaScript로 조작할 수 해줌 -->
