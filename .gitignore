@@ -38,7 +38,6 @@ Thumbs.db
 *.log
 
 # MySQL dumps or temp
-*.sql
 *.sqlite3
 
 # Package lock (optional, depends on team policy)
